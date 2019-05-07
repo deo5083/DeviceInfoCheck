@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/ua-parser-js@0/dist/ua-parser.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="text/javascript" src="scripts.js"></script>
+    
+    <title>Device Check</title>
+</head>
+<body class='container'>
+    <br>
+    <div class='text-center'>
+        <h2>Check device information.</h2>
+        <br>
+        <input type="button" class='btn btn-primary' value="Fetch info" onclick="checkDevice()" />
+    </div>
+    <br>
+
+    <div id='info' style='display: none;'>
+        <hr>
+        <div class="form-group row" id='deviceRow'>
+            <label for="device" class="col-sm-2 col-form-label"><strong>Device</strong></label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="device">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="os" class="col-sm-2 col-form-label"><strong>OS</strong></label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="os">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="version" class="col-sm-2 col-form-label"><strong>Version</strong></label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="version">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
